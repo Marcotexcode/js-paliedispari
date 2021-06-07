@@ -27,18 +27,19 @@ pari.addEventListener('click', function(){
     var tot  = num + computer;
     console.log(tot);
 
-    if(tot % 3 != 0){
+    if(tot % 2 !== 0){
 
-        console.log('hai vinto');
+        document.getElementById('risultato').innerHTML = 'hai perso';
 
     } else {
-        console.log('hai perso');
+         document.getElementById('risultato').innerHTML = 'hai vinto';
+
     }
 
 });
 
 
-// 1- Scegliere pari bottone dispari
+// 2 - Scegliere pari bottone dispari
 
 var pari = document.getElementById('dispari');
 
@@ -57,11 +58,12 @@ pari.addEventListener('click', function(){
     console.log(tot);
 
     if(tot % 2 != 0){
+        document.getElementById('risultato').innerHTML = 'hai vinto';
 
-        console.log('hai vinto');
 
     } else {
-        console.log('hai perso');
+        document.getElementById('risultato').innerHTML = 'hai perso';
+
     }
 
 });
@@ -69,6 +71,8 @@ pari.addEventListener('click', function(){
 
 
 
+
+// FUNZIONI
 
 
 function getRandomInt(min, max) {
