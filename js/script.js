@@ -9,14 +9,14 @@
 
 
 
-// 1- Scegliere pari bottone
+// 1- Scegliere pari bottone pari
 
 var pari = document.getElementById('pari');
 
 pari.addEventListener('click', function(){
 
 // inserire numero da 1 a 5 
-    var num = document.getElementById('numero').value;
+    var num = +document.getElementById('numero').value;
     console.log(num);
 
 // generare un numero da 1 a 5 
@@ -27,6 +27,42 @@ pari.addEventListener('click', function(){
     var tot  = num + computer;
     console.log(tot);
 
+    if(tot % 3 != 0){
+
+        console.log('hai vinto');
+
+    } else {
+        console.log('hai perso');
+    }
+
+});
+
+
+// 1- Scegliere pari bottone dispari
+
+var pari = document.getElementById('dispari');
+
+pari.addEventListener('click', function(){
+
+// inserire numero da 1 a 5 
+    var num = +document.getElementById('numero').value;
+    console.log(num);
+
+// generare un numero da 1 a 5 
+    var computer = getRandomInt(1,6);
+    console.log(computer);
+
+// Somma dei due numeri
+    var tot  = num + computer;
+    console.log(tot);
+
+    if(tot % 2 != 0){
+
+        console.log('hai vinto');
+
+    } else {
+        console.log('hai perso');
+    }
 
 });
 
