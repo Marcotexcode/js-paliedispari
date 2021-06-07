@@ -10,6 +10,8 @@
 
 var parola = prompt('inserisci una parola');
 
+
+
 // 2- invertire parola con funzione
 
 var parolaInversa = invertiParola(parola);
@@ -20,6 +22,8 @@ function invertiParola(str){
 }
 
 console.log(parolaInversa);
+
+
 
 // 3 - controllare se e palindroma
 
